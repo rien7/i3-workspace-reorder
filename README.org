@@ -1,0 +1,18 @@
+* i3 workspace reorder
+Now you can reorder the workspace number in a continuous increment!
+
+#+begin_example
+|1|2|4|5|8| -> |1|2|3|4|5|
+#+end_example
+
+** Requirement
+=re= for regex substitution.
+=jq= for unmarshal json in shell.
+
+** Compatibility
+Compatible with [[https://github.com/roosta/i3wsr][i3wsr]] or other change workspace names app.
+
+** Usage
+1. Download [[https://raw.githubusercontent.com/rien7/i3-workspace-reorder/main/reorder.sh][reorder.sh]] to some where on your computer.
+2. bind a keymap in =~/path/to/i3/config=, for example:
+   =bindsym $mod+q exec ~/.config/i3/reorder.sh=
